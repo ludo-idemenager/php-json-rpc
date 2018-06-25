@@ -194,7 +194,8 @@ class Client
 
     private function getVersion(array $input)
     {
-        return isset($input['jsonrpc']) && ($input['jsonrpc'] === '2.0');
+        return true;
+        //return isset($input['jsonrpc']) && ($input['jsonrpc'] === '2.0');
     }
 
     private function getId(array $input, &$id)
